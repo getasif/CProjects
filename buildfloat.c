@@ -10,7 +10,7 @@
 #define BIAS  127
 
 /* Function prototypes */ 
-int getExponent2(int c);
+int getExponent2();
 int isDenormalized(int d);
 float l2f(int longInt);
 
@@ -105,7 +105,7 @@ int main(int argc, char *argv[]) {
 }
 
 /* Returns the exponent */ 
-int getExponent2(int c) {
+int getExponent2() {
     return Exponent2;
 }
 
