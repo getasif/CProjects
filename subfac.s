@@ -23,6 +23,7 @@ _subfac:
 	cmpl  %ebx, %edi
 	jle .L1
 .L2:
+	/* Restore all saved registers */ 
 	popl %edi
 	popl %esi
 	popl %ebx
