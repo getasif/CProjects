@@ -9,10 +9,12 @@
 #include <math.h>
 #define BIAS  127
 
+/* Function prototypes */ 
 int getExponent2(int c);
 int isDenormalized(int d);
 float l2f(int longInt);
 
+/* Instance fields */ 
 int denormalized = 0;
 int Exponent2;
 int sign;
