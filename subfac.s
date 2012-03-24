@@ -1,4 +1,4 @@
-/** Works with subfac.c */ 
+/* Compiles with subfac.c with gcc -m32 -o gs subfac.c subfac.s */ 
 	.section	__TEXT,__text,regular,pure_instructions
 	.globl	_subfac
 	.align	4, 0x90
