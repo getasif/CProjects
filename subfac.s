@@ -9,6 +9,7 @@
 _subfac:
 	pushl %ebp
 	movl %esp, %ebp
+        //Store registers
 	pushl %ebx
 	pushl %esi
 	pushl %edi
@@ -27,6 +28,7 @@ _subfac:
 	cmpl  %ebx, %edi
 	jle .L1
 .L2:
+       // Restore saved registers
 	popl %edi
 	popl %esi
 	popl %ebx
