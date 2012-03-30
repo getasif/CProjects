@@ -1,8 +1,8 @@
 /**
-* Akshay Hegde
-* Program #2: Subfac.c
-* CS 47 Section 1
-*/
+* Takes the subfactorial of a number
+* Works when compiled with subfac.c with gcc -m32 option. 
+*/ 
+
 	.section	__TEXT,__text,regular,pure_instructions
 	.globl	_subfac
 	.align	4, 0x90
