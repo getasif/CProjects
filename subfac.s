@@ -1,4 +1,8 @@
-/* Compiles with subfac.c with gcc -m32 -o gs subfac.c subfac.s */ 
+/**
+* Akshay Hegde
+* Program #2: Subfac.c
+* CS 47 Section 1
+*/
 	.section	__TEXT,__text,regular,pure_instructions
 	.globl	_subfac
 	.align	4, 0x90
@@ -14,7 +18,7 @@ _subfac:
 	movl $1, %eax /* Store result */
 	movl $1, %edi /*Store i*/
 	cmpl %edi, %ebx
-	je .L2
+	jl .L2
 .L1:
 	imull %edi, %eax
 	incl %edi
@@ -23,7 +27,6 @@ _subfac:
 	cmpl  %ebx, %edi
 	jle .L1
 .L2:
-	/* Restore all saved registers */ 
 	popl %edi
 	popl %esi
 	popl %ebx
