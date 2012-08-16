@@ -1,5 +1,5 @@
 /**
-*  Calculator Program that adds and subtracts two really large numbers.
+*  Calculator Program that adds and subtracts two infinitely large numbers.
 */ 
 
 #include <stdio.h>
